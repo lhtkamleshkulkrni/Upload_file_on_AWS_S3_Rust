@@ -1,0 +1,17 @@
+[package]
+name = "upload-file-AWS-s3"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+# File
+tokio-stream = "0.1"
+mime_guess = "2"
+# Aws libs
+aws-config = "0.6"
+aws-sdk-s3 = "0.6"
+# For quick exploration (xp) - use thiserror in prod and libs
+anyhow = "1.0"
